@@ -14,7 +14,7 @@
 - It’s an algorithm that sequentially checks each element of the list until a match is found or the whole list has been searched.
 - Probably the easily algorithm we will learn in this course.
 
-  > **Performance:**
+  > **Performance:**  
   > Worst Case Performance: O(n)  
   > Best Case Performance: O(1)  
   > Average performance O(𝑛/2)
@@ -24,12 +24,12 @@
 - Binary search is a search algorithm that finds the position of a target value within a sorted array.
 - More efficient than linear search, but only works with sorted data set.
 
-  > **Performance:**
+  > **Performance:**  
   > Worst Case Performance: O(log⁡𝑛)  
   > Best Case Performance: O(1)  
   > Average performance O(log⁡𝑛)
 
-> **General Guides to Algorithm Design:**
+> **General Guides to Algorithm Design:**  
 > Implement some human thinking in algorithms.
 > Don't make the computer do dumb calculation or stupid things just because computer can do it.
 

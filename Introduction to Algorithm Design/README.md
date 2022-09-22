@@ -15,9 +15,9 @@
 - Probably the easily algorithm we will learn in this course.
 - Performance:
 
-  - Worst Case Performance: O(n)
-  - Best Case Performance: O(1)
-  - Average performance O(𝑛/2)
+  > Worst Case Performance: O(n)  
+  > Best Case Performance: O(1)  
+  > Average performance O(𝑛/2)
 
 ### Binary Search
 
@@ -25,6 +25,6 @@
 - More efficient than linear search, but only works with sorted data set.
 - Performance:
 
-  - Worst Case Performance: O(log⁡𝑛)
-  - Best Case Performance: O(1)
-  - Average performance O(log⁡𝑛)
+  > Worst Case Performance: O(log⁡𝑛)  
+  > Best Case Performance: O(1)  
+  > Average performance O(log⁡𝑛)

@@ -1,5 +1,9 @@
 # Introduction to Algorithm Design
 
+> **General Guides to Algorithm Design:**  
+> Implement some human thinking in algorithms.  
+> Don't make the computer do dumb calculation or stupid things just because computer can do it.
+
 ## List of Algorithms
 
 1. [Linear Search (Sequential Search)](#linear-search-sequential-search)
@@ -28,10 +32,6 @@
   > Worst Case Performance: O(log⁡𝑛)  
   > Best Case Performance: O(1)  
   > Average performance O(log⁡𝑛)
-
-> **General Guides to Algorithm Design:**  
-> Implement some human thinking in algorithms.
-> Don't make the computer do dumb calculation or stupid things just because computer can do it.
 
 ### Counter
 

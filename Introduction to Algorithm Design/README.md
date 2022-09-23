@@ -57,3 +57,17 @@
               [d, e, f]
                   [e, f, g]
   ```
+
+### Recursion
+
+- A function that calls itself.
+- Recursion is using a data structure called “stack”. When we are calling a function inside another function, we are on the call stack.
+- Recursion is also a mathematical relation in sequences.
+
+  > **Fibonacci Sequence is defined by:**
+  >
+  > F(0) = 0
+  > F(1) = 1  
+  > F(n) = F(n – 1) + F(n – 2)
+  >
+  > F = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34.....]

@@ -19,3 +19,14 @@
   > Worst Case Performance: O(𝑛^2)  
   > Best Case Performance: O(𝑛)  
   > Average performance O(𝑛^2)
+
+## Insertion Sort
+
+- Insertion sort is a little bit more efficient than bubble sort in practice. Theoretically, they have the same Big O value.
+- The principle of insertion sort is simple. Keeping inserting a new value into a sorted array. Insert it to the correct spot so the sorted array remains sorted.
+
+  > **Performance:**
+  >
+  > Worst Case Performance: O(𝑛^2)  
+  > Best Case Performance: O(𝑛)  
+  > Average performance O(𝑛^2)

@@ -14,3 +14,8 @@
 
 - Bubble sort compares adjacent elements and swaps them if they are in the wrong order.
 - This simple algorithm performs poorly in real world use and is used primarily as an educational tool. More efficient algorithms such as quicksort, or merge sort are used by the sorting libraries built into popular programming languages such as Python and Java.
+  > **Performance:**
+  >
+  > Worst Case Performance: O(𝑛^2)  
+  > Best Case Performance: O(𝑛)  
+  > Average performance O(𝑛^2)

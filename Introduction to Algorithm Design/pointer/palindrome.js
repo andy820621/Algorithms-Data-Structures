@@ -1,3 +1,5 @@
+// Write a function that checks if the input string is a palindrome. Palindrome is a word that can be read forwards and backwards.
+
 function mySolution(str) {
 	let left = 0,
 		right = str.length - 1;

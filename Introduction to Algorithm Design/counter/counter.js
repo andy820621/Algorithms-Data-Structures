@@ -1,3 +1,5 @@
+// Write a function that takes two arrays as parameters, and then return an array that is the intersection of these two arrays. For example, Intersection([1, 2, 3], [5, 16, 1, 3]) should return [1, 3].
+
 function intersection(arr1, arr2) {
 	let result = [];
 	let arr3 = arr1.concat(arr2);

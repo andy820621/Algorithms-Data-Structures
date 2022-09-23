@@ -1,3 +1,5 @@
+// Write a function that given a sorted array of integers and a number. Find if there’s any pair in the array that has average of the given number. Find all of them. There might be multiple pairs fit the condition.
+
 function averagePair(array, n) {
 	const result = [];
 	let step = 0;

@@ -1,3 +1,5 @@
+// Write two functions that calculate the max and min sum of n consecutive numbers in an array.
+
 // function maxSum(arr, len) {
 // 	if (len > arr.length) return null;
 // 	let start = 0;

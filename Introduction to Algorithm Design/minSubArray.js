@@ -9,12 +9,15 @@ function minSubArray(arr, sum) {
 		minLength = Infinity;
 
 	while (start < arr.length) {
+		step++;
 		if (total < sum && end < arr.length) {
 			total += arr[end];
 			end++;
 		} else if (total >= sum) {
 			let currentLength = end - start;
+			if (currentLength === 1) return 1;
 			if (minLength > currentLength) minLength = currentLength;
+
 			total -= arr[start];
 			start++;
 		} else if (end === arr.length) {
@@ -30,4 +33,4 @@ function minSubArray(arr, sum) {
 	console.log(minLength);
 	return minLength;
 }
-minSubArray([8, 1, 6, 15, 3, 16, 5, 7, 14, 30, 12], 60);
+minSubArray([8, 1, 6, 15, 3, 16, 5, 7, 14, 30, 12], 15);

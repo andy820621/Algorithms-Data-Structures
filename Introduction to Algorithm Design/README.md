@@ -66,7 +66,7 @@
 
   > **Fibonacci Sequence is defined by:**
   >
-  > F(0) = 0
+  > F(0) = 0  
   > F(1) = 1  
   > F(n) = F(n – 1) + F(n – 2)
   >

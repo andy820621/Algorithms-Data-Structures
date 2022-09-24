@@ -28,8 +28,8 @@
 - This simple algorithm performs poorly in real world use and is used primarily as an educational tool. More efficient algorithms such as quicksort, or merge sort are used by the sorting libraries built into popular programming languages such as Python and Java.
 - See the [Code](/Sorting%20Algorithms/1_Bubble%20Sort/bubbleSort.js)
 
-  > **Performance:**
-  >
+  **Performance:**
+
   > Worst Case Performance: O(𝑛^2)  
   > Best Case Performance: O(𝑛)  
   > Average performance O(𝑛^2)
@@ -40,8 +40,8 @@
 - The principle of insertion sort is simple. Keeping inserting a new value into a sorted array. Insert it to the correct spot so the sorted array remains sorted.
 - See the [Code](/Sorting%20Algorithms/2_Insertion%20Sort/insertionSort.js)
 
-  > **Performance:**
-  >
+  **Performance:**
+
   > Worst Case Performance: O(𝑛^2)  
   > Best Case Performance: O(𝑛)  
   > Average performance O(𝑛^2)
@@ -52,8 +52,8 @@
 - Selection sort is the last “not so efficient” sorting algorithm we will learn in this course.
 - See the [Code](/Sorting%20Algorithms/3_Selection%20Sort/selectionSort.js)
 
-  > **Performance:**
-  >
+  **Performance:**
+
   > Worst Case Performance: O(𝑛^2)  
   > Best Case Performance: O(𝑛^2)  
   > Average performance O(𝑛^2)
@@ -69,8 +69,8 @@
 
 - See the [Code](/Sorting%20Algorithms/4_Merge%20Sort/mergeSort.js)
 
-  > **Performance:**
-  >
+  **Performance:**
+
   > Worse Case Performance: O(𝑛 log⁡𝑛)  
   > Best Case Performance: O(𝑛 log⁡𝑛)  
   > Average Performance: O(𝑛 log⁡𝑛)
@@ -82,7 +82,7 @@
 
 - See the [Code](/Sorting%20Algorithms/5_Heap%20Sort/heapSort.js)
 
-![Heap Data Structure](https://www.geeksforgeeks.org/wp-content/uploads/MinHeapAndMaxHeap.png)
+<img src="https://www.geeksforgeeks.org/wp-content/uploads/MinHeapAndMaxHeap.png" alt="Heap Data Structure" width="70%" />
 
 **Performance:**
 

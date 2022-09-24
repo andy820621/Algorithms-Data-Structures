@@ -17,7 +17,7 @@
 
 - It’s an algorithm that sequentially checks each element of the list until a match is found or the whole list has been searched.
 - Probably the easily algorithm we will learn in this course.
-- See the [Code](/Introduction%20to%20Algorithm%20Design/0_Linear%20Search/app.js)
+- See the [Code](/Introduction%20to%20Algorithm%20Design/1_Linear%20Search/app.js)
 
   > **Performance:**
   >

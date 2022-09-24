@@ -33,3 +33,15 @@
   > Worst Case Performance: O(𝑛^2)  
   > Best Case Performance: O(𝑛)  
   > Average performance O(𝑛^2)
+
+## Selection Sort
+
+- The principle of selection sort is – select the smallest value in unsorted array, and then swap it with the left most value in this unsorted array.
+- Selection sort is the last “not so efficient” sorting algorithm we will learn in this course.
+- See the [Code](/Sorting%20Algorithms/2_Selection%20Sort/selectionSort.js)
+
+  > **Performance:**
+  >
+  > Worst Case Performance: O(𝑛^2)  
+  > Best Case Performance: O(𝑛^2)  
+  > Average performance O(𝑛^2)

@@ -74,3 +74,18 @@
   > Worse Case Performance: O(𝑛 log⁡𝑛)  
   > Best Case Performance: O(𝑛 log⁡𝑛)  
   > Average Performance: O(𝑛 log⁡𝑛)
+
+## 5. Heap Sort
+
+- Heap sort uses **Max Heap** to sort.
+- In order to understand our next sorting algorithm, Heap Sort, you must first understand what a "max heap" is. Also, we need to know how max heap algorithm works.
+
+- See the [Code](/Sorting%20Algorithms/5_Heap%20Sort/heapSort.js)
+
+![Heap Data Structure](https://www.geeksforgeeks.org/wp-content/uploads/MinHeapAndMaxHeap.png)
+
+**Performance:**
+
+> Worse Case Performance: O(𝑛 log⁡𝑛)  
+> Best Case Performance: O(𝑛 log⁡𝑛) or **O(n)**  
+> Average Performance: O(𝑛 log⁡𝑛)

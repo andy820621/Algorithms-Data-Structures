@@ -6,14 +6,14 @@
 
 ### List of Algorithms
 
-1. [Linear Search (Sequential Search)](#linear-search-sequential-search)
-2. [Binary Search](#binary-search)
-3. [Counter](#counter)
-4. [Pointer](#pointer)
-5. [Sliding Window](#sliding-window)
-6. [Recursion](#recursion)
+1. [Linear Search (Sequential Search)](#1-linear-search-sequential-search)
+2. [Binary Search](#2-binary-search)
+3. [Counter](#3-counter)
+4. [Pointer](#4-pointer)
+5. [Sliding Window](#5-sliding-window)
+6. [Recursion](#6-recursion)
 
-## Linear Search (Sequential Search)
+## 1. Linear Search (Sequential Search)
 
 - It’s an algorithm that sequentially checks each element of the list until a match is found or the whole list has been searched.
 - Probably the easily algorithm we will learn in this course.
@@ -25,7 +25,7 @@
   > Best Case Performance: O(1)  
   > Average performance O(𝑛/2)
 
-## Binary Search
+## 2. Binary Search
 
 - Binary search is a search algorithm that finds the position of a target value within a sorted array.
 - More efficient than linear search, but only works with sorted data set.
@@ -37,19 +37,19 @@
   > Best Case Performance: O(1)  
   > Average performance O(log⁡𝑛)
 
-## Counter
+## 3. Counter
 
 - This is a general skill when doing algorithm design. Counter is not a formal name. Name is different everywhere, but the idea is the same.
 - Using a counter object will reduce the complexity of algorithms.
 - See the [Code](/Introduction%20to%20Algorithm%20Design/3_Counter)
 
-## Pointer
+## 4. Pointer
 
 - This is a general skill when doing algorithm design. Pointer is not a formal name. Name is different, but the idea is the same everywhere.
 - It helps reduce the complexity of algorithms.
 - See the [Code](/Introduction%20to%20Algorithm%20Design/4_Pointer)
 
-## Sliding Window
+## 5. Sliding Window
 
 - This is a well-known algorithm.
 - Generally speaking, a sliding window is a sub-list that runs over an underlying collection. For example, if you have an array like:
@@ -65,7 +65,7 @@
                   [e, f, g]
   ```
 
-## Recursion
+## 6. Recursion
 
 - A function that calls itself.
 - Recursion is using a data structure called “stack”. When we are calling a function inside another function, we are on the call stack.

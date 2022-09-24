@@ -6,11 +6,11 @@
 
 ### List of Algorithms
 
-1. Bubble Sort
-2. Insertion Sort
-3. Selection Sort
+1. [Bubble Sort](#1-bubble-sort)
+2. [Insertion Sort](#2-insertion-sort)
+3. [Selection Sort](#3-selection-sort)
 
-## Bubble Sort
+## 1. Bubble Sort
 
 - Bubble sort compares adjacent elements and swaps them if they are in the wrong order.
 - This simple algorithm performs poorly in real world use and is used primarily as an educational tool. More efficient algorithms such as quicksort, or merge sort are used by the sorting libraries built into popular programming languages such as Python and Java.
@@ -22,7 +22,7 @@
   > Best Case Performance: O(𝑛)  
   > Average performance O(𝑛^2)
 
-## Insertion Sort
+## 2. Insertion Sort
 
 - Insertion sort is a little bit more efficient than bubble sort in practice. Theoretically, they have the same Big O value.
 - The principle of insertion sort is simple. Keeping inserting a new value into a sorted array. Insert it to the correct spot so the sorted array remains sorted.
@@ -34,7 +34,7 @@
   > Best Case Performance: O(𝑛)  
   > Average performance O(𝑛^2)
 
-## Selection Sort
+## 3. Selection Sort
 
 - The principle of selection sort is – select the smallest value in unsorted array, and then swap it with the left most value in this unsorted array.
 - Selection sort is the last “not so efficient” sorting algorithm we will learn in this course.

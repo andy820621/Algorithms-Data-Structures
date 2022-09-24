@@ -6,17 +6,17 @@
 
 ### List of Algorithms
 
-    #### I. Complexity is O(n^2)
+#### I. Complexity is O(n^2)
 
-    1. [Bubble Sort](#1-bubble-sort)
-    2. [Insertion Sort](#2-insertion-sort)
-    3. [Selection Sort](#3-selection-sort)
+1. [Bubble Sort](#1-bubble-sort)
+2. [Insertion Sort](#2-insertion-sort)
+3. [Selection Sort](#3-selection-sort)
 
-    #### II. Complexity is O(n\*logn)
+#### II. Complexity is O(n\*logn)
 
-    4. [Merge Sort](#4-merge-sort)
-    5. [Heap Sort](#5-heap-sort)
-    6. [Quick Sort](#6-quick-sort)
+4. [Merge Sort](#4-merge-sort)
+5. [Heap Sort](#5-heap-sort)
+6. [Quick Sort](#6-quick-sort)
 
 ---
 

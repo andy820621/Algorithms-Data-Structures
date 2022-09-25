@@ -66,7 +66,27 @@
 
 - The principle of merge sort is quite simple. Take advantage of the fact that combining two sorted arrays has O(n) time complexity, using the pointer skill.
 - This sorting algorithm is a classic example of “divide and conquer”. (分而治之)
+- When analyzing the Divide & Conquer algorithm, we usually use the following two methods:
+  - "Recursion-Tree" Method with "Substitution" Method.
+  - **Master Theorem** Method
 - See the [Code](/Sorting%20Algorithms/4_Merge%20Sort/mergeSort.js)
+
+  #### $*$ Master Theorem:
+
+  > Let **a ≥ 1** and **b > 1** be constant, **f(n)** is a function,  
+  > and let **T(n)** be defined on a non-negative integers by the recurrence:
+  >
+  > **$T(n) = a T(\frac{n}{b}) + f(n)$**
+  >
+  > > **$a$** means **the amount of subproblems**.  
+  > > **$\frac{n}{b}$** means **the size of each subproblems**.  
+  > > **$f(n)$** means **the cost of combinig subproblems**.
+  >
+  > ##### And then we can get BigO in three different situations:
+  >
+  > > i. **$\log b^a$** > exponents of **$f(n)$** => **$O(n^{\log b^a})$**  
+  > > ii. **$\log b^a$** = exponents of **$f(n)$** => **$O(f(n)\cdot{\log b^a})$**  
+  > > iii. **$\log b^a$** < exponents of **$f(n)$** => **$O(f(n))$**
 
   **Performance:**
 
@@ -77,7 +97,7 @@
 ## 5. Heap Sort
 
 - Heap sort uses **Max Heap** to sort.
-- In order to understand our next sorting algorithm, Heap Sort, you must first understand what a "max heap" is. Also, we need to know how max heap algorithm works.
+- In order to understand our next sorting algorithm, Heap Sort, you must first understand what a "**Max Heap**" is. Also, we need to know how max heap algorithm works.
 - See the [Code](/Sorting%20Algorithms/5_Heap%20Sort/heapSort.js)
 
 <img src="https://www.geeksforgeeks.org/wp-content/uploads/MinHeapAndMaxHeap.png" alt="Heap Data Structure" width="70%" />
@@ -92,7 +112,7 @@
 
 - As you know from its name, quick sort is quick.
 - Developed by British computer scientist Tony Hoare in 1959 and published in 1961, it is still a commonly used algorithm for sorting.
-- If you want to learn quick sort you have to learn **Partition** first.
+- In order to understand Quick Sort, you must first understand what a "**Partition**" is.
 
   > #### Partition
   >

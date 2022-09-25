@@ -12,7 +12,7 @@
 2. [Insertion Sort](#2-insertion-sort)
 3. [Selection Sort](#3-selection-sort)
 
-#### II. Complexity is $O(n\times \log n)$
+#### II. Complexity is $O(n\cdot \log n)$
 
 1. [Merge Sort](#4-merge-sort)
 2. [Heap Sort](#5-heap-sort)
@@ -60,7 +60,7 @@
 
 ---
 
-# II. Complexity is $O(n\times \log n)$
+# II. Complexity is $O(n\cdot \log n)$
 
 ## 4. Merge Sort
 
@@ -70,9 +70,9 @@
 
   **Performance:**
 
-  > Worse Case Performance: $O(n\times \log n)$  
-  > Best Case Performance: $O(n\times \log n)$  
-  > Average Performance: $O(n\times \log n)$
+  > Worse Case Performance: $O(n\cdot \log n)$  
+  > Best Case Performance: $O(n\cdot \log n)$  
+  > Average Performance: $O(n\cdot \log n)$
 
 ## 5. Heap Sort
 
@@ -84,9 +84,9 @@
 
 **Performance:**
 
-> Worse Case Performance: $O(n\times \log n)$  
-> Best Case Performance: $O(n\times \log n)$ or **$O(n)$**  
-> Average Performance: $O(n\times \log n)$
+> Worse Case Performance: $O(n\cdot \log n)$  
+> Best Case Performance: $O(n\cdot \log n)$ or **$O(n)$**  
+> Average Performance: $O(n\cdot \log n)$
 
 ## 6. Quick Sort
 
@@ -104,5 +104,5 @@
 **Performance:**
 
 > Worse Case Performance: $O(n^2)$  
-> Best Case Performance: $O(n\times \log n)$  
-> Average Performance: $O(n\times \log n)$
+> Best Case Performance: $O(n\cdot \log n)$  
+> Average Performance: $O(n\cdot \log n)$

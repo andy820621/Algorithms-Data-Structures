@@ -14,9 +14,9 @@
 
 #### II. Complexity is $O(n\cdot \log n)$
 
-1. [Merge Sort](#4-merge-sort)
-2. [Heap Sort](#5-heap-sort)
-3. [Quick Sort](#6-quick-sort)
+1. [Merge Sort](#1-merge-sort)
+2. [Heap Sort](#2-heap-sort)
+3. [Quick Sort](#3-quick-sort)
 
 ---
 
@@ -62,7 +62,7 @@
 
 # II. Complexity is $O(n\cdot \log n)$
 
-## 4. Merge Sort
+## 1. Merge Sort
 
 - The principle of merge sort is quite simple. Take advantage of the fact that combining two sorted arrays has O(n) time complexity, using the pointer skill.
 - This sorting algorithm is a classic example of “divide and conquer”. (分而治之)
@@ -94,7 +94,7 @@
   > Best Case Performance: $O(n\cdot \log n)$  
   > Average Performance: $O(n\cdot \log n)$
 
-## 5. Heap Sort
+## 2. Heap Sort
 
 - Heap sort uses **Max Heap** to sort.
 - In order to understand our next sorting algorithm, Heap Sort, you must first understand what a "**Max Heap**" is. Also, we need to know how max heap algorithm works.
@@ -108,7 +108,7 @@
 > Best Case Performance: $O(n\cdot \log n)$ or **$O(n)$**  
 > Average Performance: $O(n\cdot \log n)$
 
-## 6. Quick Sort
+## 3. Quick Sort
 
 - As you know from its name, quick sort is quick.
 - Developed by British computer scientist Tony Hoare in 1959 and published in 1961, it is still a commonly used algorithm for sorting.

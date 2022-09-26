@@ -6,14 +6,12 @@
 
 ### List of Algorithms
 
-- [Introduction to Algorithm Design](#introduction-to-algorithm-design)
-    - [List of Algorithms](#list-of-algorithms)
-  - [1. Linear Search (Sequential Search)](#1-linear-search-sequential-search)
-  - [2. Binary Search](#2-binary-search)
-  - [3. Counter](#3-counter)
-  - [4. Pointer](#4-pointer)
-  - [5. Sliding Window](#5-sliding-window)
-  - [6. Recursion](#6-recursion)
+1. [Linear Search (Sequential Search)](#1-linear-search-sequential-search)
+2. [Binary Search](#2-binary-search)
+3. [Counter](#3-counter)
+4. [Pointer](#4-pointer)
+5. [Sliding Window](#5-sliding-window)
+6. [Recursion](#6-recursion)
 
 ## 1. Linear Search (Sequential Search)
 

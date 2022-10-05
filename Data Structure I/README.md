@@ -146,7 +146,33 @@ Index = [m(key * A % 1)]
 - By moding 1, we will get a number between 0 and 1
 - By multiplying m, we will get a number between 0 and m – 1
 
-#### Handling Collisions (Chaining)
+##### Handling Collisions (Chaining)
 
 - No matter what hash function methods we use, we will have collisions.
 - When coming across collision, we just store elements into an array. Therefore, our hashtable is actually a “array of arrays”.
+
+##### Hash keys that are not Numbers
+
+**Convert the string to an integer using whatever technique you wish.**
+
+1. The simplest (but not very effective) algorithm is to use the length of the string.
+2. Or you could take the sum of all the **ASCII** values of all the characters in the string.
+3. Or you could take some combination of the character's position in the string (0...length) and its **ASCII** value, and multiply/add them creative ways
+
+Click to see the structure of [HashTable](HashTable.js).(with JavaScript)
+
+### Understanding Hashtable
+
+- Assuming the following things are true (which might not be true in real life but could be close enough):
+  1. Hash function has $O(1)$ when hashing any keys.
+  2. We are doing simple uniform hashing, which means that each key that we are hashing is equally likely to be hashed into any slot of hashtable, independent of other keys hashing.
+- Then,
+  1. Let’s called the load factor $\frac{n}{m} = \alpha$. If m = $\theta(n)$, then $\alpha = O(1)$.
+  2. The running time for hashtable is $O(1 + \alpha)$.
+
+### Real Life Application of Hashtable
+
+- Python has Dictionaries
+- JavaScript has Objects, Arrays
+- Java (including Android API) has HashSet, HashMap, LinkedHashSet, and LinkedHashMap generic collections.
+- Password Hashing

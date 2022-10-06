@@ -100,16 +100,12 @@ Click to see the structure of the [Stack](Stack.js) that use Javascript to recre
 
 #### Hash Function I – Division Method
 
-```
-m = hashtable size
-n = # of elements to store into hashtable
-```
+> m = hashtable size
+> n = # of elements to store into hashtable
 
 Division Method:
 
-```
-Index = Key mod m
-```
+> Index = Key mod m
 
 ##### Collision and Load Factor
 
@@ -129,22 +125,18 @@ Index = Key mod m
 
 #### Hash Function II – Multiplication Method
 
-```
-m = hashtable size
-n = # of elements to store into hashtable
-```
+> m = hashtable size
+> n = # of elements to store into hashtable
 
 Multiplication Method:
 
-```
-Index = [m(key * A % 1)]
-```
+> Index = [m(key * A % 1)]
 
 **A = $\frac{(\sqrt{5}−1)}{2}$**
 
-- keyA is an irrational number ($\approx$ 0.618....)
-- By moding 1, we will get a number between 0 and 1
-- By multiplying m, we will get a number between 0 and m – 1
+> - keyA is an irrational number ($\approx$ 0.618....)
+> - By moding 1, we will get a number between 0 and 1
+> - By multiplying m, we will get a number between 0 and m – 1
 
 ##### Handling Collisions (Chaining)
 
@@ -159,16 +151,16 @@ Index = [m(key * A % 1)]
 2. Or you could take the sum of all the **ASCII** values of all the characters in the string.
 3. Or you could take some combination of the character's position in the string (0...length) and its **ASCII** value, and multiply/add them creative ways
 
-Click to see the structure of [HashTable](HashTable.js).(with JavaScript)
+> Click to see the structure of [HashTable](HashTable.js).(with JavaScript)
 
 ### Understanding Hashtable
 
-- Assuming the following things are true (which might not be true in real life but could be close enough):
-  1. Hash function has $O(1)$ when hashing any keys.
-  2. We are doing simple uniform hashing, which means that each key that we are hashing is equally likely to be hashed into any slot of hashtable, independent of other keys hashing.
+- Assuming the following things are true (which might not be true in real life but > could be close enough):
+  > 1. Hash function has $O(1)$ when hashing any keys.
+  > 2. We are doing simple uniform hashing, which means that each key that we are > hashing is equally likely to be hashed into any slot of hashtable, independent of > other keys hashing.
 - Then,
-  1. Let’s called the load factor $\frac{n}{m} = \alpha$. If m = $\theta(n)$, then $\alpha = O(1)$.
-  2. The running time for hashtable is $O(1 + \alpha)$.
+  > 1. Let’s called the load factor $\frac{n}{m} = \alpha$. If m = $\theta(n)$, then > $\alpha = O(1)$.
+  > 2. The running time for hashtable is $O(1 + \alpha)$.
 
 ### Real Life Application of Hashtable
 

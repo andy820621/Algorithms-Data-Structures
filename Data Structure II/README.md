@@ -47,8 +47,8 @@ breadthFirst(rootNode); // expect to get the result: [10, 9, 7, 8, 5, 11, 1, 3, 
 preOrder(rootNode); // expect to get the result: [10, 9, 8, 6, 5, 11, 7, 1, 4, 2, 3]
 
 // InOrder
-inOrder(InOrder); // expect to get the result: [6, 8, 9, 5, 11, 10, 4, 1, 2, 7, 3]
+inOrder(rootNode); // expect to get the result: [6, 8, 9, 5, 11, 10, 4, 1, 2, 7, 3]
 
 // PostOrder
-postOrder(InOrder); // expect to get the result: [6, 8, 5, 11, 9, 4, 2, 1, 3, 7, 10]
+postOrder(rootNode); // expect to get the result: [6, 8, 5, 11, 9, 4, 2, 1, 3, 7, 10]
 ```

@@ -92,13 +92,11 @@ Click to see the structure of the [Stack](Stack.js) that use Javascript to recre
 
 ## 3. Hashtable
 
-### Hash Function
-
 - In computer science, hash function is a commonly used idea. There’s tons of different hash functions. Ex. Passwords are hashed before storing into database. JavaScript objects and arrays are hashed.
 - The principle of a hash function is to convert one value to another.
 - From the problem we observed before, let’s think about how to solve it… why not hashed all players ID into a small integer?
 
-#### Hash Function I – Division Method
+### Hash Function I – Division Method
 
 > m = hashtable size
 > n = # of elements to store into hashtable
@@ -107,7 +105,7 @@ Division Method:
 
 > Index = Key mod m
 
-##### Collision and Load Factor
+#### Collision and Load Factor
 
 - Collision: When two or more objects happen to be hashed into the same index in hashtable.
 - Load factor: the ratio of **$\frac{n}{m}$**
@@ -115,7 +113,7 @@ Division Method:
   - The smaller the load factor is, the hashtable is likely to have many empty spots, but not too many collisions.
   - The bigger the load factor is, the hashtable is likely to be full and have lots of collisions.
 
-##### Advantage and Disadvantages
+#### Advantage and Disadvantages
 
 - **Advantage** of using division method is FAST.
 - **Disadvantages**:
@@ -123,7 +121,7 @@ Division Method:
   1. Ideally, Integer m has to be a **prime number** that it **far** enough from $2^𝑃$ (ex: 701), where **$P$** is a positive integer. (Because $10^𝑃$ is divisible by $2^𝑃$, taught in Number Theory)
   2. If naming convention of objects are similar, then it has a chance to get MANY MANY MANY collisions.
 
-#### Hash Function II – Multiplication Method
+### Hash Function II – Multiplication Method
 
 > m = hashtable size
 > n = # of elements to store into hashtable
@@ -138,12 +136,12 @@ Multiplication Method:
 > - By moding 1, we will get a number between 0 and 1
 > - By multiplying m, we will get a number between 0 and m – 1
 
-##### Handling Collisions (Chaining)
+#### Handling Collisions (Chaining)
 
 - No matter what hash function methods we use, we will have collisions.
 - When coming across collision, we just store elements into an array. Therefore, our hashtable is actually a “array of arrays”.
 
-##### Hash keys that are not Numbers
+#### Hash keys that are not Numbers
 
 **Convert the string to an integer using whatever technique you wish.**
 
@@ -151,7 +149,7 @@ Multiplication Method:
 2. Or you could take the sum of all the **ASCII** values of all the characters in the string.
 3. Or you could take some combination of the character's position in the string (0...length) and its **ASCII** value, and multiply/add them creative ways
 
-> Click to see the structure of [HashTable](HashTable.js).(with JavaScript)
+> Click to see the structure of [HashTable](HashTable.js). (with JavaScript)
 
 ### Understanding Hashtable
 

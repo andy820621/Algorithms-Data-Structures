@@ -35,7 +35,7 @@
      - InOrder (See the [Code](InOrder.js))
      - PostOrder (See the [Code](PostOrder.js))
 
-![questionTree](questionTree.png)
+<img src="questionTree.webp" alt="questionTree" width="70%" />
 
 Use above methods to traverse this tree expect to get the results:
 

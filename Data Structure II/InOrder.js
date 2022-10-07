@@ -6,7 +6,6 @@ class Node {
 }
 
 const result = [];
-let index = 0;
 function inOrder(n) {
 	if (n.children[0]) inOrder(n.children[0]);
 	result.push(n.value);

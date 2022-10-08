@@ -29,11 +29,11 @@
 
 - Since tree is a commonly used data structure, we need a systematic way to know what nodes are in a tree.
 - There are two ways to do tree traversal:
-  1. Breadth-First Tree Traversal (See the [Code](Breadth-First.js))
+  1. Breadth-First Tree Traversal (See the [Code](Traversal%20Methods/Breadth-First.js))
   2. Depth-First Tree Traversal
-     - PreOrder (See the [Code](PreOrder.js))
-     - InOrder (See the [Code](InOrder.js))
-     - PostOrder (See the [Code](PostOrder.js))
+     - PreOrder (See the [Code](Traversal%20Methods/PreOrder.js))
+     - InOrder (See the [Code](Traversal%20Methods/InOrder.js))
+     - PostOrder (See the [Code](Traversal%20Methods/PostOrder.js))
 
 <img src="questionTree.webp" alt="questionTree" width="70%" />
 
@@ -52,3 +52,15 @@ inOrder(rootNode); // expect to get the result: [6, 8, 9, 5, 11, 10, 4, 1, 2, 7,
 // PostOrder
 postOrder(rootNode); // expect to get the result: [6, 8, 5, 11, 9, 4, 2, 1, 3, 7, 10]
 ```
+
+### Binary Search Tree (BST)
+
+- **Binary Tree** means each node has at most two children, which are referred to as the left child and the right child.
+- **Binary Search Tree** is a binary tree, but the left child is always less than the root, and the right child is always greater than the root.
+- See the [Code](Binary-Search-Tree.js)
+
+> **Performance of Binary Search Tree**
+>
+> Worst Case Performance: $O(n)$
+> Best Case Performance: $O(1)$
+> Average Case Performance: $O(log$ $n)$

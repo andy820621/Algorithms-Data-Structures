@@ -35,7 +35,7 @@
      - InOrder (See the [Code](Traversal%20Methods/InOrder.js))
      - PostOrder (See the [Code](Traversal%20Methods/PostOrder.js))
 
-<img src="questionTree.webp" alt="questionTree" width="70%" />
+<img src="_images/questionTree.webp" alt="questionTree" width="70%" />
 
 Use above methods to traverse this tree expect to get the results:
 
@@ -134,3 +134,23 @@ See the [Code](Priority-Queue.js)
 1. Read the information of Huffman Codes and its corresponding letters. Store the information in a Hashtable.
 2. Read the compressed file, for each byte, we convert it back to 8 bits. Store the bits in an array. (I called it bitArray)
 3. Read through bitArray, use left and right point algorithm to convert bits back to its corresponding letters.
+
+### Minimal Spanning Tree
+
+- If you have a graph, and selectively remove edges (without removing nodes) so that it forms a tree, what's left is called a **Spanning Tree**.
+- That is, a spanning tree is a subset of the graph that has all the nodes of the original, but just enough edges to hold it together. For any graph, there are usually many possible spanning trees.
+- However, the **Minimal Spanning Tree** is one whose edges have the smallest total weight. (This assumes a weighted graph; i.e. a graph in which each edge has a "weight" or a cost associated with it.)
+
+![Undirected Graph / Spanning Tree / Minimum Spanning Tree](https://he-s3.s3.amazonaws.com/media/uploads/146b47a.jpg)
+
+#### **Prim’s Algorithm** of Finding MST
+
+- Start at any node we want.
+- Keep track of what nodes have been visited.
+- Keep a list of edges. (These are the edges we use in building MST.)
+- For all edges of visited node but not in MST edges list, find the smallest weighted edge that doesn’t create a cycle, and add the edge to the MST edge list. (Remember, **MST** is a tree, which should be **acyclic**.) (If the smallest weight graph is connected to two visited nodes that are in MST array, then the edge would create a cycle)
+- Keep doing this until we come across a situation that a smallest weighted edge will 100% create a cycle. (That means that all nodes in this graph are in MST array) If we hit this point, then stop.
+
+![Prim’s Algorithm](_images/Prim_s-Algorithm.webp)
+
+See the [Code](MST__Prim's-Algorithm.js)

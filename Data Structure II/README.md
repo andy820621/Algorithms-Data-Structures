@@ -154,3 +154,25 @@ See the [Code](Priority-Queue.js)
 ![Prim’s Algorithm](_images/Prim_s-Algorithm.webp)
 
 See the [Code](MST__Prim's-Algorithm.js)
+
+#### Kruskal’s Algorithm
+
+Kruskal’s Algorithm builds the spanning tree by adding edges one by one into a growing spanning tree. Kruskal's algorithm follows **greedy approach (Greedy Algorithm)** as in each iteration it finds an edge which has least weight and add it to the growing spanning tree.
+
+**Algorithm Steps:**
+
+- Sort the graph edges with respect to their weights.
+- Start adding edges to the MST from the edge with the smallest weight until the edge of the largest weight.
+- Only add edges which doesn't form a cycle , edges which connect only disconnected components.
+
+![Kruskal’s Algorithm](_images/Kruskal%E2%80%99s%20Algorithm.webp)
+
+> We knew **Min Heap**'s Big O is $O(log$ $n)$, so...
+> Time Complexity of **Kruskal’s Algorithm** is: **$O(n$ $*$ $log$ $n)$**
+
+#### Application
+
+- Take the cable television wiring as an example. If you can only route along the street, the streets are the edges, and the intersections are the nodes.
+- There must be a minimum spanning tree to minimize the wiring cost.
+
+![Cabling Problem](https://slideplayer.com/slide/15182463/92/images/6/Cabling+problem+A+minimum+spanning+tree.jpg)

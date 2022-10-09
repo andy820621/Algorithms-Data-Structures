@@ -86,7 +86,7 @@
   >
   > > i. **$\log b^a$** > exponents of **$f(n)$** => **$O(n^{\log b^a})$**  
   > > ii. **$\log b^a$** = exponents of **$f(n)$** => **$O(f(n)\cdot{\log b^a})$**  
-  > > iii. **$\log b^a$** < exponents of **$f(n)$** => **$O(f(n))$**
+  > > iii. **$\log b^a$** &lt; exponents of **$f(n)$** => **$O(f(n))$**
 
   **Performance:**
 

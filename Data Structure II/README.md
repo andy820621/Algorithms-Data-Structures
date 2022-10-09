@@ -72,7 +72,7 @@ postOrder(rootNode); // expect to get the result: [6, 8, 5, 11, 9, 4, 2, 1, 3, 7
 - Since priority queue is a concept, we can implement it with a linked list, queue, array, or other data structures. But… **Max Heap** is the most efficient!!
 
 > **$*$** **Max heap** is a binary tree that the parent node is always greater than both the right child and left child. However, the right child doesn’t necessarily need to be greater than left child.
-> ( Click to see [More](../Sorting%20Algorithms/README.md#2-heap-sort) about Max Heap & Heap Sort )
+> ( Click to see [More](https://github.com/andy820621/Algorithms-Data-Structures/tree/main/Sorting%20Algorithms#2-heap-sort) about Max Heap & Heap Sort )
 
 #### Why Max Heap?
 

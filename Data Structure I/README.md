@@ -6,6 +6,8 @@
 2. [Stack and Queue](#2-stack-and-queue)
 3. [Hashtable](#3-hashtable)
 
+---
+
 ## 1. Linked List
 
 ### What is Linked List?

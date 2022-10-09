@@ -1,5 +1,26 @@
 # Data Structure II
 
+- [Data Structure II](#data-structure-ii)
+  - [Graph (Definition)](#graph-definition)
+  - [Tree (Definition)](#tree-definition)
+    - [Tree Traversal](#tree-traversal)
+    - [Binary Search Tree (BST)](#binary-search-tree-bst)
+  - [Priority Queue](#priority-queue)
+    - [Why Max Heap?](#why-max-heap)
+    - [Max Heap Insertion](#max-heap-insertion)
+    - [Math Relation in Priority Queue](#math-relation-in-priority-queue)
+  - [Encoding Theory](#encoding-theory)
+    - [Huffman Encoding](#huffman-encoding)
+      - [Example of Huffman Encoding](#example-of-huffman-encoding)
+    - [Huffman Encoding - Compression](#huffman-encoding---compression)
+    - [Huffman Encoding – Decompression](#huffman-encoding--decompression)
+  - [Minimal Spanning Tree](#minimal-spanning-tree)
+    - [Prim’s Algorithm of Finding MST](#prims-algorithm-of-finding-mst)
+    - [Kruskal’s Algorithm](#kruskals-algorithm)
+    - [Application](#application)
+
+---
+
 ## Graph (Definition)
 
 - In computer science, a graph is an **abstract data type**.
@@ -65,7 +86,7 @@ postOrder(rootNode); // expect to get the result: [6, 8, 5, 11, 9, 4, 2, 1, 3, 7
 > Best Case Performance: $O(1)$
 > Average Case Performance: $O(log$ $n)$
 
-### Priority Queue
+## Priority Queue
 
 - In computer science, a priority queue is an abstract data type **similar to a regular queue** in which **each element additionally** has a "**priority**" associated with it.
 - Elements with higher priorities are served before elements with lower priorities. (Just like emergency room in a hospital).
@@ -74,7 +95,7 @@ postOrder(rootNode); // expect to get the result: [6, 8, 5, 11, 9, 4, 2, 1, 3, 7
 > **$*$** **Max heap** is a binary tree that the parent node is always greater than both the right child and left child. However, the right child doesn’t necessarily need to be greater than left child.
 > ( Click to see [More](https://github.com/andy820621/Algorithms-Data-Structures/tree/main/Sorting%20Algorithms#2-heap-sort) about Max Heap & Heap Sort )
 
-#### Why Max Heap?
+### Why Max Heap?
 
 - Big O of Enqueue and Dequeue of Priority Queue using Max Heap.
   > Enqueue: $O(log$ $n)$
@@ -83,12 +104,12 @@ postOrder(rootNode); // expect to get the result: [6, 8, 5, 11, 9, 4, 2, 1, 3, 7
   > Enqueue: $O(n)$ (using insertion sort for a nearly sorted array)
   > Dequeue: $O(1)$ or $O(n)$ (LinkedList or Array)
 
-#### Max Heap Insertion
+### Max Heap Insertion
 
 - In heap sort, we learned how to build a max heap with a given array. Now, since priority queue is **dynamic**, which means that we will keep adding new items into max heap.
 - The principle of dynamic max heap is simple, just keep swapping the new node up if necessary.
 
-#### Math Relation in Priority Queue
+### Math Relation in Priority Queue
 
 - if **parent node** is **$x$**:
   > **left** child node is **$2𝑥+1$**  
@@ -98,19 +119,19 @@ postOrder(rootNode); // expect to get the result: [6, 8, 5, 11, 9, 4, 2, 1, 3, 7
 
 See the [Code](Priority-Queue.js)
 
-### Encoding Theory
+## Encoding Theory
 
 - In computing, all data are stored digitally in our devices. Briefly speaking, all digital files, including music, picture, video, string and numbers are just 0s and 1s.
 - When storing files, what is the best way to perform “Lossless Compression”?
 
 > $*$ In **Lossy compression**, A file does not restore or rebuilt in its original form. While in **Lossless Compression**, A file can be restored in its original form.
 
-#### Huffman Encoding
+### Huffman Encoding
 
 - This is an algorithm developed by **David A. Huffman** while he was a Sc.D. student at MIT, and published in the 1952 paper "A Method for the Construction of Minimum-Redundancy Codes".
 - The principle of Huffman encoding is, if a letter appears many times in a file, then it be compressed into short bits. On the other hand, a letter appears very less in a file, it can be compressed into more bits.
 
-##### Example of Huffman Encoding
+#### Example of Huffman Encoding
 
 > **Try to compress: AAAABBB \_ \_ C**
 >
@@ -119,7 +140,7 @@ See the [Code](Priority-Queue.js)
 >
 > Can try it on the [Huffman Tree Generator](https://huffman.ooz.ie/)
 
-#### Huffman Encoding - Compression
+### Huffman Encoding - Compression
 
 1. Read the file, count the frequency of each character.
 2. Sort the frequency table.
@@ -129,13 +150,13 @@ See the [Code](Priority-Queue.js)
 
 > $*$ At the beginning of the compressed file, include Huffman codes and its corresponding letter, as we need those information for decompression.
 
-#### Huffman Encoding – Decompression
+### Huffman Encoding – Decompression
 
 1. Read the information of Huffman Codes and its corresponding letters. Store the information in a Hashtable.
 2. Read the compressed file, for each byte, we convert it back to 8 bits. Store the bits in an array. (I called it bitArray)
 3. Read through bitArray, use left and right point algorithm to convert bits back to its corresponding letters.
 
-### Minimal Spanning Tree
+## Minimal Spanning Tree
 
 - If you have a graph, and selectively remove edges (without removing nodes) so that it forms a tree, what's left is called a **Spanning Tree**.
 - That is, a spanning tree is a subset of the graph that has all the nodes of the original, but just enough edges to hold it together. For any graph, there are usually many possible spanning trees.
@@ -143,7 +164,7 @@ See the [Code](Priority-Queue.js)
 
 ![Undirected Graph / Spanning Tree / Minimum Spanning Tree](https://he-s3.s3.amazonaws.com/media/uploads/146b47a.jpg)
 
-#### **Prim’s Algorithm** of Finding MST
+### Prim’s Algorithm of Finding MST
 
 - Start at any node we want.
 - Keep track of what nodes have been visited.
@@ -155,7 +176,7 @@ See the [Code](Priority-Queue.js)
 
 See the [Code](MST__Prim's-Algorithm.js)
 
-#### Kruskal’s Algorithm
+### Kruskal’s Algorithm
 
 Kruskal’s Algorithm builds the spanning tree by adding edges one by one into a growing spanning tree. Kruskal's algorithm follows **greedy approach (Greedy Algorithm)** as in each iteration it finds an edge which has least weight and add it to the growing spanning tree.
 
@@ -170,7 +191,7 @@ Kruskal’s Algorithm builds the spanning tree by adding edges one by one into a
 > We knew **Min Heap**'s Big O is $O(log$ $n)$, so...
 > Time Complexity of **Kruskal’s Algorithm** is: **$O(n$ $*$ $log$ $n)$**
 
-#### Application
+### Application
 
 - Take the cable television wiring as an example. If you can only route along the street, the streets are the edges, and the intersections are the nodes.
 - There must be a minimum spanning tree to minimize the wiring cost.

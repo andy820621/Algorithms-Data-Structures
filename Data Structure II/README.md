@@ -97,3 +97,40 @@ postOrder(rootNode); // expect to get the result: [6, 8, 5, 11, 9, 4, 2, 1, 3, 7
   > **parent** node is **$Math.floor(\frac{x - 1}{2})$**
 
 See the [Code](Priority-Queue.js)
+
+### Encoding Theory
+
+- In computing, all data are stored digitally in our devices. Briefly speaking, all digital files, including music, picture, video, string and numbers are just 0s and 1s.
+- When storing files, what is the best way to perform “Lossless Compression”?
+
+> $*$ In **Lossy compression**, A file does not restore or rebuilt in its original form. While in **Lossless Compression**, A file can be restored in its original form.
+
+#### Huffman Encoding
+
+- This is an algorithm developed by **David A. Huffman** while he was a Sc.D. student at MIT, and published in the 1952 paper "A Method for the Construction of Minimum-Redundancy Codes".
+- The principle of Huffman encoding is, if a letter appears many times in a file, then it be compressed into short bits. On the other hand, a letter appears very less in a file, it can be compressed into more bits.
+
+##### Example of Huffman Encoding
+
+> **Try to compress: AAAABBB \_ \_ C**
+>
+> - Original: 000000000000001001001110110010 (30bits)
+> - Huffman Encoding: 0000111111101101100 (19 bits)
+>
+> Can try it on the [Huffman Tree Generator](https://huffman.ooz.ie/)
+
+#### Huffman Encoding - Compression
+
+1. Read the file, count the frequency of each character.
+2. Sort the frequency table.
+3. According to the frequency table, constructor a Huffman Tree. Priority Queue is a good option for building Huffman Tree.
+4. Generate Huffman codes for the nodes in Huffman Tree.
+5. Read the whole file again and compress the file, according to the Huffman codes. Every byte can be written into the compressed file. (Java has BufferedOutputStream class to write raw byte data to a file. Node.js might have something similar.)
+
+> $*$ At the beginning of the compressed file, include Huffman codes and its corresponding letter, as we need those information for decompression.
+
+#### Huffman Encoding – Decompression
+
+1. Read the information of Huffman Codes and its corresponding letters. Store the information in a Hashtable.
+2. Read the compressed file, for each byte, we convert it back to 8 bits. Store the bits in an array. (I called it bitArray)
+3. Read through bitArray, use left and right point algorithm to convert bits back to its corresponding letters.

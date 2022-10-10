@@ -59,15 +59,15 @@ function BFT(startNode) {
 	queue.push(startNode);
 
 	// solution 1
-	for (let i = 0; i < queue.length; i++) {
-		if (!queue[i].visited) {
-			result.visited = true;
-			result.push(queue[i]);
-			queue[i].neighbors.forEach((node) => {
-				if (!queue.includes(node)) queue.push(node);
-			});
-		}
-	}
+	// for (let i = 0; i < queue.length; i++) {
+	// 	if (!queue[i].visited) {
+	// 		result.visited = true;
+	// 		result.push(queue[i]);
+	// 		queue[i].neighbors.forEach((node) => {
+	// 			if (!queue.includes(node)) queue.push(node);
+	// 		});
+	// 	}
+	// }
 
 	// solution 2
 	// while (queue.length !== 0) {
@@ -80,6 +80,19 @@ function BFT(startNode) {
 	// 		});
 	// 	}
 	// }
+
+	// solution 3
+	while (queue.length != 0) {
+		let firstNode = queue.shift();
+		firstNode.visited = true;
+		result.push(firstNode);
+		firstNode.neighbors.forEach((node) => {
+			if (!node.visited) {
+				node.visited = true;
+				queue.push(node);
+			}
+		});
+	}
 }
 
 BFT(A);

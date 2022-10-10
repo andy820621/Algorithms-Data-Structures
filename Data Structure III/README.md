@@ -16,4 +16,7 @@
 
 ## Floyd-Warshall Algorithm
 
+- In computer science, the Floyd–Warshall algorithm is an algorithm for finding all-pairs shortest path problem in a **directed weighted graph** with **positive** or **negative** edge weights.
+- The Floyd–Warshall algorithm is an example of **dynamic programming** and was published in its currently recognized form by Robert Floyd in 1962. However, it is essentially the same as algorithms previously published by Bernard Roy in 1959 and also by Stephen Warshall in 1962.
+
 ## Dijkstra’s Algorithm

@@ -24,3 +24,12 @@
 - Dijkstra's algorithm is an algorithm for finding the shortest paths between nodes in a graph. It was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later.
 - Given a start point, find the shortest path from this node to all other nodes.
 - Least-cost paths are calculated for instance to establish tracks of electricity lines or oil pipelines. The algorithm has also been used to calculate optimal long-distance footpaths in Ethiopia and contrast them with the situation on the ground. Dijkstra’s Algorithm is also used in network routing.
+
+**Follow the steps below to implement the method:**
+
+1. Have a function that takes one input – the starting node.
+2. Set all values in shortest table to be infinity except for the starting node. (Set this starting node's distance value to 0.)
+3. Set the previous object's property to be null.
+4. As long as there is something we need to visit, calculate the distance from A to currentNode plus currentNode to neighbor, if it's less than the shortest path, then update the shortest path and previous table and visited list.
+
+> See the [Code](Dijkstra%E2%80%99s%20Algorithm.js)

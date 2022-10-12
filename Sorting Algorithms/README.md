@@ -96,11 +96,13 @@
 
 ## 2. Heap Sort
 
+<img src="https://www.geeksforgeeks.org/wp-content/uploads/MinHeapAndMaxHeap.png" alt="Heap Data Structure" width="70%" />
+
 - Heap sort uses **Max Heap** to sort.
 - In order to understand our next sorting algorithm, Heap Sort, you must first understand what a "**Max Heap**" is. Also, we need to know how max heap algorithm works.
 - See the [Code](/Sorting%20Algorithms/5_Heap%20Sort/heapSort.js)
 
-<img src="https://www.geeksforgeeks.org/wp-content/uploads/MinHeapAndMaxHeap.png" alt="Heap Data Structure" width="70%" />
+![Heap Sort Time Complexity](heapSortTimeComplexity.png)
 
 **Performance:**
 

@@ -1,9 +1,8 @@
 # Data Structure III
 
-- [Data Structure III](#data-structure-iii)
-  - [Graph Traversal (Depth First, Breadth First)](#graph-traversal-depth-first-breadth-first)
-  - [Floyd-Warshall Algorithm](#floyd-warshall-algorithm)
-  - [Dijkstra’s Algorithm](#dijkstras-algorithm)
+- [Graph Traversal (Depth First, Breadth First)](#graph-traversal-depth-first-breadth-first)
+- [Floyd-Warshall Algorithm](#floyd-warshall-algorithm)
+- [Dijkstra’s Algorithm](#dijkstras-algorithm)
 
 ---
 
@@ -31,5 +30,7 @@
 2. Set all values in shortest table to be infinity except for the starting node. (Set this starting node's distance value to 0.)
 3. Set the previous object's property to be null.
 4. As long as there is something we need to visit, calculate the distance from A to currentNode plus currentNode to neighbor, if it's less than the shortest path, then update the shortest path and previous table and visited list.
+
+![Dijkstra’s Algorithm](Dijkstra%E2%80%99s%20Algorithm.webp)
 
 > See the [Code](Dijkstra%E2%80%99s%20Algorithm.js)

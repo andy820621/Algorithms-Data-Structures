@@ -52,6 +52,24 @@ class MinHeap {
 		this.values = [];
 	}
 
+	decrease_priority(node) {
+		let newIndex = this.values.indexOf(node);
+		let parentIndex = Math.floor((newIndex - 1) / 2);
+		while (
+			parentIndex >= 0 &&
+			this.values[newIndex].distanceFromStartNode <
+				this.values[parentIndex].distanceFromStartNode
+		) {
+			// swap parent and child
+			let result = this.values[parentIndex];
+			this.values[parentIndex] = this.values[newIndex];
+			this.values[newIndex] = result;
+			// update index number
+			newIndex = parentIndex;
+			parentIndex = Math.floor((newIndex - 1) / 2);
+		}
+	}
+
 	enqueue(node) {
 		// check if the priority queue is empty
 		if (this.values.length === 0) {
@@ -92,67 +110,47 @@ class MinHeap {
 		this.values[0] = temp;
 		let removedNode = this.values.pop();
 
-		// console.log(
-		// 	this.values.map((node) => node.value + ":" + node.distanceFromStartNode)
-		// );
 		this.minHeapify(0);
-		// console.log(
-		// 	this.values.map((node) => node.value + ":" + node.distanceFromStartNode)
-		// );
 
 		return removedNode;
 	}
 
-	// minHeapify(i) {
-	// 	let smallest;
-	// 	let l = i * 2 + 1;
-	// 	let r = i * 2 + 2;
-	// 	if (
-	// 		l <= this.values.length - 1 &&
-	// 		this.values[l].distanceFromStartNode <
-	// 			this.values[i].distanceFromStartNode
-	// 	) {
-	// 		smallest = l;
-	// 	} else {
-	// 		smallest = i;
-	// 	}
-
-	// 	if (
-	// 		r <= this.values.length - 1 &&
-	// 		this.values[r].distanceFromStartNode <
-	// 			this.values[smallest].distanceFromStartNode
-	// 	) {
-	// 		smallest = r;
-	// 	}
-
-	// 	if (smallest != i) {
-	// 		// swap
-	// 		let temp = this.values[i];
-	// 		this.values[i] = this.values[smallest];
-	// 		this.values[smallest] = temp;
-	// 		this.minHeapify(smallest);
-	// 	}
-	// }
-
-	minHeapify(index) {
-		let smallest = index;
-		for (let i = 1; i < this.values.length; i++) {
-			if (
-				this.values[i].distanceFromStartNode <
-				this.values[smallest].distanceFromStartNode
-			) {
-				smallest = i;
-			}
+	minHeapify(i) {
+		let smallest;
+		let l = i * 2 + 1;
+		let r = i * 2 + 2;
+		if (
+			l <= this.values.length - 1 &&
+			this.values[l].distanceFromStartNode <
+				this.values[i].distanceFromStartNode
+		) {
+			smallest = l;
+		} else {
+			smallest = i;
 		}
-		let temp = this.values[index];
-		this.values[index] = this.values[smallest];
-		this.values[smallest] = temp;
+
+		if (
+			r <= this.values.length - 1 &&
+			this.values[r].distanceFromStartNode <
+				this.values[smallest].distanceFromStartNode
+		) {
+			smallest = r;
+		}
+
+		if (smallest != i) {
+			// swap
+			let temp = this.values[i];
+			this.values[i] = this.values[smallest];
+			this.values[smallest] = temp;
+			this.minHeapify(smallest);
+		}
 	}
 }
 
 function Dijkstra(node) {
 	const MH = new MinHeap();
 	node.distanceFromStartNode = 0;
+	node.visited = true;
 	MH.enqueue(A);
 	MH.enqueue(B);
 	MH.enqueue(C);
@@ -171,12 +169,13 @@ function Dijkstra(node) {
 				if (d1 > d2 + d3) {
 					checkingNode.distanceFromStartNode = d2 + d3;
 					checkingNode.previous = currentNode;
+					MH.decrease_priority(checkingNode);
 				}
 			}
 		});
-		currentNode.visited = true;
 
 		currentNode = MH.dequeue();
+		currentNode.visited = true;
 	}
 
 	printResult(node);

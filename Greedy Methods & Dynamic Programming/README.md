@@ -3,7 +3,7 @@
 - [Greedy Methods](#greedy-methods)
 - [Dynamic Programming](#dynamic-programming)
   - [Longest Common Subsequence (LCS)](#longest-common-subsequence-lcs)
-  - [Deeper look of Dynamic Programming](#deep-look-of-dynamic-programming)
+  - [Deeper look of Dynamic Programming](#deeper-look-of-dynamic-programming)
     - [Meaning of Dynamic Programming](#meaning-of-dynamic-programming)
     - [Multi-Stage Graph](#multi-stage-graph)
 
@@ -22,23 +22,16 @@
   > $*$ Please do not confuse the term "substring" and "subsequence".
 - For example, in the strings **ABCDE** and **ACE** the longest substring is BAC, while the longest subsequence is **ACE**.
 
-<style>
-  .table { text-align: center;}
-  .table-2 tr:nth-child(2) td:nth-child(3){ background: #306478; color: #fff}
-  .table-2 tr:nth-child(3) td:nth-child(5){ background: #306478; color: #fff}
-  .table-2 tr:nth-child(4) td:nth-child(7){ background: #306478; color: #fff}
-</style>
-
 1. Create a table
 
 <div class="table table-1">
 
-|        | ""  | A    | B    | C    | D    | E    |
-| ------ | --- | ---- | ---- | ---- | ---- | ---- |
-| **""** | 0   | 0    | 0    | 0    | 0    | 0    |
-| **A**  | 0   | null | null | null | null | null |
-| **C**  | 0   | null | null | null | null | null |
-| **E**  | 0   | null | null | null | null | null |
+|        | ""  |  A   |  B   |  C   |  D   |  E   |
+| ------ | :-: | :--: | :--: | :--: | :--: | :--: |
+| **""** |  0  |  0   |  0   |  0   |  0   |  0   |
+| **A**  |  0  | null | null | null | null | null |
+| **C**  |  0  | null | null | null | null | null |
+| **E**  |  0  | null | null | null | null | null |
 
 </div>
 
@@ -46,12 +39,12 @@
 
 <div class="table table-2">
 
-|        | ""  | A     | B     | C     | D     | E     |
-| ------ | --- | ----- | ----- | ----- | ----- | ----- |
-| **""** | 0   | 0     | 0     | 0     | 0     | 0     |
-| **A**  | 0   | 1 (↖) | 1 (←) | 1 (←) | 1 (←) | 1 (←) |
-| **C**  | 0   | 1 (↑) | 1 (←) | 2 (↖) | 2 (←) | 2 (←) |
-| **E**  | 0   | 1 (↑) | 1 (←) | 2 (↑) | 2 (←) | 3 (↖) |
+|        | ""  |   A   |   B   |   C   |   D   |   E   |
+| ------ | :-: | :---: | :---: | :---: | :---: | :---: |
+| **""** |  0  |   0   |   0   |   0   |   0   |   0   |
+| **A**  |  0  | 1 (↖) | 1 (←) | 1 (←) | 1 (←) | 1 (←) |
+| **C**  |  0  | 1 (↑) | 1 (←) | 2 (↖) | 2 (←) | 2 (←) |
+| **E**  |  0  | 1 (↑) | 1 (←) | 2 (↑) | 2 (←) | 3 (↖) |
 
 </div>
 
@@ -77,7 +70,7 @@
 
 **Use Dynamic Programming to solve this graph:**
 
-<table style="text-align: center;">
+<table>
     <thead>
         <tr>  
             <th></th>

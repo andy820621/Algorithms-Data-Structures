@@ -1,5 +1,14 @@
 # Backtracking & Branch and Bound & KMP
 
+- [Backtracking](#backtracking)
+  - [8 Queens Puzzle](#8-queens-puzzle)
+- [Branch and Bound Algorithm](#branch-and-bound-algorithm)
+  - [0/1 Knapsack Problem](#01-knapsack-problem)
+- [Difference between Backtracking & Branch and Bound](#difference-between-backtracking--branch-and-bound)
+- [Knuth-Morris-Pratt String Matching](#knuth-morris-pratt-string-matching)
+
+---
+
 ## Backtracking
 
 - Backtracking is a general algorithm for finding all (or some) solutions to some computational problems, notably constraint satisfaction problems, that incrementally builds candidates to the solutions, and **abandons** a candidate (**backtracks**) as soon as it determines that the candidate cannot possibly be completed to a valid solution.

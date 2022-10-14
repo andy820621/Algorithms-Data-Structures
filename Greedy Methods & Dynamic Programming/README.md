@@ -1,12 +1,13 @@
 # Greedy Methods & Dynamic Programming
 
-- [Greedy Methods & Dynamic Programming](#greedy-methods--dynamic-programming)
-  - [Greedy Methods](#greedy-methods)
-  - [Dynamic Programming](#dynamic-programming)
-    - [Longest Common Subsequence (LCS)](#longest-common-subsequence-lcs)
-    - [Deeper look of Dynamic Programming](#deeper-look-of-dynamic-programming)
-      - [Meaning of Dynamic Programming](#meaning-of-dynamic-programming)
-      - [Multi-Stage Graph](#multi-stage-graph)
+- [Greedy Methods](#greedy-methods)
+- [Dynamic Programming](#dynamic-programming)
+  - [Longest Common Subsequence (LCS)](#longest-common-subsequence-lcs)
+  - [Deeper look of Dynamic Programming](#deeper-look-of-dynamic-programming)
+    - [Meaning of Dynamic Programming](#meaning-of-dynamic-programming)
+    - [Multi-Stage Graph](#multi-stage-graph)
+
+---
 
 ## Greedy Methods
 

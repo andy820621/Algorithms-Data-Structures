@@ -32,9 +32,40 @@
 
 ## Difference between Backtracking & Branch and Bound
 
-|  Parameter   |                                                                  Backtracking                                                                  |                                                                   Branch and Bound                                                                   |
-| :----------: | :--------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------: | --------- | ------------------------ | -------------------------- |
-|   Approach   | Backtracking is a general algorithm for finding all (or some) solutions to some computational problems. (**constraint satisfaction** problems) | Branch-and-Bound is used to solve **combinatorial optimization** problems. These problems are typically **exponential** in terms of time complexity. | Traversal | DFS (Depth First Search) | BFS (Breadth First Search) |
-|   Function   |                                                              Feasibility Function                                                              |                                                      Feasibility Function <br>Bounding Function                                                      |
-|   Problems   |                                             Backtracking is used for solving **Decision Problem**.                                             |                                     Branch-and-Bound is used for solving **combinational optimization** Problem.                                     |
-| Applications |                                           Useful in solving **N-Queen** Problem, **Hamilton Cycle**.                                           |                                     Useful in solving **0/1 Knapsack Problem**, **Travelling Salesman Problem**.                                     |
+<table>
+    <thead>
+        <tr>  
+            <th>Parameter</th>
+            <th>Backtracking</th>
+            <th>Branch and Bound</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Approach</td>
+        <td>Backtracking is a general algorithm for finding all (or some) solutions to some computational problems. (<b>constraint satisfaction</b> problems)</td>
+        <td>Branch-and-Bound is used to solve <b>combinatorial optimization</b> problems. These problems are typically <b>exponential</b> in terms of time complexity.</td>
+      </tr>
+      <tr>
+        <td>Traversal</td>
+        <td>DFS (Depth First Search)</td>
+        <td>BFS (Breadth First Search)</td>
+      </tr>
+      <tr>
+        <td>Function</td>
+        <td>Feasibility Function</td>
+        <td>Feasibility Function <br>Bounding Function</td>
+      </tr>
+      <tr>
+        <td>Problems</td>
+        <td>Backtracking is used for solving <b>Decision Problem</b>. </td>
+        <td>Branch-and-Bound is used for solving <b>combinational optimization</b> Problem.</td>
+      </tr>
+      <tr>
+        <td>Applications</td>
+        <td>Useful in solving <b>N-Queen</b> Problem, <b>Hamilton Cycle</b>. </td>
+        <td>Useful in solving <b>0/1 Knapsack Problem</b>, <b>Travelling Salesman Problem</b>.</td>
+      </tr>
+    </tbody>
+    
+</table>

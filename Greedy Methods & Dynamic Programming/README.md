@@ -1,11 +1,12 @@
 # Greedy Methods & Dynamic Programming
 
-- [Greedy Methods](#greedy-methods)
-- [Dynamic Programming](#dynamic-programming)
-  - [Longest Common Subsequence (LCS)](#longest-common-subsequence-lcs)
-  - [Deeper look of Dynamic Programming](#deeper-look-of-dynamic-programming)
-    - [Meaning of Dynamic Programming](#meaning-of-dynamic-programming)
-    - [Multi-Stage Graph](#multi-stage-graph)
+- [Greedy Methods & Dynamic Programming](#greedy-methods--dynamic-programming)
+  - [Greedy Methods](#greedy-methods)
+  - [Dynamic Programming](#dynamic-programming)
+    - [Longest Common Subsequence (LCS)](#longest-common-subsequence-lcs)
+    - [Deeper look of Dynamic Programming](#deeper-look-of-dynamic-programming)
+      - [Meaning of Dynamic Programming](#meaning-of-dynamic-programming)
+      - [Multi-Stage Graph](#multi-stage-graph)
 
 ## Greedy Methods
 
@@ -82,19 +83,19 @@
     </thead>
     <tbody>
       <tr>
-        <td></td>
-        <td>S</td>
-        <td>A</td>
-        <td>B</td>
-        <td>C</td>
-        <td>D</td>
-        <td>E</td>
-        <td>T</td>
+        <th></th>
+        <th>S</th>
+        <th>A</th>
+        <th>B</th>
+        <th>C</th>
+        <th>D</th>
+        <th>E</th>
+        <th>T</th>
       </tr>
     </tbody>
     <tbody>
       <tr>
-        <td>S</td>
+        <th>S</th>
         <td>0</td>
         <td>1(S)</td>
         <td>2(S)</td>

@@ -69,3 +69,11 @@
     </tbody>
     
 </table>
+
+## Knuth-Morris-Pratt String Matching
+
+- In computer science, the Knuth–Morris–Pratt string-searching algorithm (or KMP algorithm) searches for occurrences of a word within a main text string by employing the observation that when a mismatch occurs, the word itself embodies sufficient information to determine where the next match could begin, thus bypassing re-examination of previously matched characters.
+
+![Schematic diagram of the process of KMP comparison](https://miro.medium.com/max/828/1*zih18lLx2ibPlf1FgoNj-A.gif)
+
+> See the [Code](KMP.js)

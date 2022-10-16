@@ -2,6 +2,14 @@
 
 > **Unsolved problem in computer science** | If the solution to a problem is easy to check for correctness, must the problem be easy to solve?
 
+List of Contents:
+
+- [Intro to P verses NP](#intro-to-p-verses-np)
+- [Understand NP problems](#understand-np-problems)
+- [Nondeterministic Polynomial](#nondeterministic-polynomial)
+- [NP-Completeness](#np-completeness)
+- [NP-Hardness](#np-hardness)
+
 ## Intro to P verses NP
 
 - The P versus NP problem is a major unsolved problem in computer science. **It asks whether every problem whose solution can be quickly verified can also be solved quickly.**
@@ -35,7 +43,9 @@
 - Deterministic Machines execute deterministic algorithms. Deterministic algorithms mean that this algorithm only make one choice in each step. All the algorithms we write are deterministic.
 - Nondeterministic Algorithm means this algorithm makes more than one choice in each step. Only nondeterministic machine can execute this kind of algorithm. However, this kind of machine doesn’t exist, as it requires ∞ processors to execute codes parallelly.
 
-![Deterministic & Nondeterministic](https://i.stack.imgur.com/V3KXz.png)
+<p align="center">
+  <img src="https://i.stack.imgur.com/V3KXz.png" alt="Deterministic & Nondeterministic" />
+</p>
 
 - Most of the computer scientists believe that P does not equal NP.
 - However, this has not been proved yet, therefore, it’s just people’s guess/hope.
@@ -113,3 +123,63 @@ NP-hard problems are those **at least as hard as the hardest NP problems**; NP-h
 
 - If there are **$N$** different elements in S, then time complexity of brute force will be **$𝑂(2^𝑁)$**.
   > Count of subsets of $S$ => $C^N_0 + C^N_1 + C^N_2 + ...\ + C^N_N = 2^N$
+
+### Hamilton Cycle
+
+- A Hamiltonian cycle (or Hamiltonian circuit) is a path in an undirected or directed graph that visits each vertex exactly once.
+- A graph that contains a Hamiltonian path is called a **traceable graph**.
+- Finding all Hamilton Cycles of a graph can be done by using brute force with backtracking, since no efficient algorithm has been found to find Hamilton cycles.
+
+![Hamilton Cycle Image](Hamilton%20Cycle%20Graph.webp)
+
+### Travelling Salesman Problem (TSP)
+
+- The travelling salesman problem (a.k.a. TSP) asks the following question: "Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city exactly once and returns to the origin city?
+- Since TSP problem is the optimization problem of Hamilton Cycle, TSP problem can be solved by using Branch and Bound Algorithm.
+
+### Vertex Cover
+
+- Vertex Cover problem asks how to find the smallest subset of nodes in a graph that "cover" (that is, are adjacent to) every edge.
+- The problem of finding a minimum vertex cover is a classical optimization problem in computer science.
+- Minimum Vertex Cover in a Graph:
+  <p align="center">
+    <img src="Vertex%20Cover.webp" alt="Vertex Cover image" width="800px" />
+  </p>
+
+### Clique
+
+- A "clique" is a subset of a graph that is complete.
+  > $*$ A complete graph is a graph that every node is adjacent to every other node.
+- The "K-Clique" problem is whether a given graph contains a clique of K nodes, where K is some integer. This is an example of NP-complete problem.
+
+<p align="center">
+  <img src="https://iq.opengenus.org/content/images/2019/06/clique.png" alt="Clique in Graph" width="800px" />
+</p>
+
+### Reduction of 3-SAT to Clique
+
+- **Try Proof:**
+
+  1.  We can verify the solution in Polynomial time.
+  2.  3-SAT (NP-Complete) can be polynomialy reduced to clique! (as the following):
+
+      We assume a formula 3-sat ($F$) as an example :
+      $F= (X_1 + X_2 + X_3).(X^"_1 + X^"_2 + X_3).(X_4 + X^"_3 + X_2)$
+
+      > note: $X^"$ is the negation of $X$
+
+<p align="center">
+  <img src="https://i.stack.imgur.com/xQAWo.jpg" alt="Clique in Graph" />
+</p>
+
+1. Clique =>3-SAT :
+   if we have a clique then it is SAT "by construction" literal represented as Node. Such that no edge between $X_i$, $X_j$ belongs $C_k$, and no edge between $X^"_i$ and $X_i$ in both $C_k$, $C_j$. Let $G$ has a clique of size $k$ we can set each literal represented by a node $v$ belongs the clique so 3-SAT is there. Since it is enough to have only 1 literal = true in each clause.
+
+2. 3-SAT => Clique:
+   Let $x$ be 3-SAT found in CNF, and it is satisfiable. => by the graph construction, we can connect all nodes that have true for each clause, and hence we have a clique #
+
+> Since 3-SAT can be reduced to Clique, we know that if we can solve Clique, then the solution can be useful in solving 3-SAT.
+
+### Why Learning NP-Complete?
+
+When designing an algorithm to solve a HARD problem, if you cannot do it, then maybe try to prove that this problem can be reduced to a NP-Complete Problem. If you can do that, then you can conclude that no one in the world can solve this HARD problem, so don’t fire me.

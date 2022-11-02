@@ -8,17 +8,18 @@ function KMP(string, target) {
 		startIndexArray = [];
 
 	while (i < string.length) {
-		if (string[i] === target[j]) {
+		if (string[i] === target[j] && j < target.length) {
 			if (j === target.length - 1) {
 				counter++;
-				startIndexArray.push(i);
+				startIndexArray.push(i - j);
 				j = 0;
 			} else {
 				j++;
 			}
 			i++;
 		} else {
-			i -= ps_array[(j = 0)];
+			i -= ps_array[j];
+			j = 0;
 		}
 	}
 
@@ -27,14 +28,18 @@ function KMP(string, target) {
 	console.log(`their starting index will be at: [${startIndexArray}].`);
 
 	function findPsArray(string) {
-		// create array and set index 0 to "-1"
-		let ps_array = [-1];
+		// create array and set index 0 to "-1", index 1 to 0
+		let ps_array = [-1, 0];
 
 		let n = 0;
 		for (let i = 1; i < string.length; i++) {
 			if (string[n] !== string[i]) {
-				n = 0;
-				ps_array.push(0);
+				if (n !== 0) {
+					n = ps_array[n];
+					i--;
+				} else {
+					ps_array.push((n = 0));
+				}
 			} else {
 				ps_array.push(++n);
 			}
@@ -42,9 +47,12 @@ function KMP(string, target) {
 		// remove end item
 		ps_array.pop();
 
+		// console.log(ps_array);
 		return ps_array;
 	}
 }
 
 KMP("abcdabgabcdabck aabbabcdabck", "abcdabck"); // 2
 KMP("afsdajskfjjareklasfjarereralkfjarealkjrea;;iot", "re"); // 5
+KMP("mississippi", "issip"); // 1
+KMP("aabaaabaaac", "aabaaac"); // 1
